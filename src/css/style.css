@@ -266,6 +266,8 @@ footer h2{
 }
 footer h3{
     font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 42px;
 }
 footer p{
     color:#fff;
@@ -273,11 +275,40 @@ footer p{
     font-weight: bold;
     line-height: 1.5;
 }
-.menu_contacts{
-    width: 100%;
-    padding-left: 694px;
+.menu_contacts{    
+    height: 145px;
+    margin-left: 700px;
 }
-.cont{
+.menu_contacts div{
     float:left;
     margin-right: 105px;
+}
+.input_text{
+    margin-left: 588px;
+    height:60px;
+}
+.input_text input{
+    float:left;
+    width: 350px;
+    height: 36px;
+    margin-right: 30px;
+    font-size: 14px;
+}
+.placehold textarea{
+    width:730px;
+    height: 100px; 
+    margin-bottom: 20px;   
+    font-size: 14px;
+}
+.submit_inp{
+    background-color: none;
+}
+.submit_inp input{
+    height: 42px;
+    background:none;
+    border:2px solid #fff;
+    color:#fff;
+    border-radius: 5px;
+    padding: 0 17px 0 17px;
+    font-size: 14px;
 }
