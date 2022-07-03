@@ -1,77 +1,68 @@
-body{
-    font-family: Arial, sans-serif;
-}
 .page{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    min-height:100vh;
+    background:url(../img/bg.png) center/cover no-repeat;
 }
 header{
-    z-index: 5;
-    position: fixed;
+    max-width:1000px;
+    margin:auto;
+    padding-top: 215px;
     width:100%;
-    height: 90px;
-    background-color:red;
+    text-align: center;
 }
-main{
+h1{ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing:3px;
+    line-height:normal;
+}
+h3{ 
+    max-width: 750px;
+    width:100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin:auto;
+    margin-bottom: 88px;
+    line-height:normal;
+    color:#999999;
+}
+/*
+main{ 
+    margin: auto;
+    max-width: 1438px;
+    width:100%;
     display: flex;
-    flex-direction: column;
-    width: 60vw;
-    height: 100vh;
+    flex-wrap: wrap;
+    justify-content:space-between;
 }
-.block1{
-    padding-top:90px;
-    flex:1;
-    background-color:deepskyblue;
+.block{
+    background-color:white;
+    height: 630px;
+    width:340px;
+    border-color:	#F0F0F0;
+    border-width: 0.1px;
+    border-style:solid;
+    border-radius: 10px;
+    margin-bottom: 42px;
 }
-.circle{    
-    position: relative;
-    margin:auto;
-    top:50%;
-    background-color:orange;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+*/
+
+main{
+    max-width:1438px;
+    margin: auto;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    grid-gap: 40px 35px;
+    gap: 40px 35px;
+
 }
-.block2{
-    z-index:1;
-    flex:1;
-    background-color:chartreuse;
-}
-.block3{
-    z-index: 3;
-    flex:2;
-    background-color:coral;
-}
-.rectangle{
-    background-color:blueviolet;
-    height: 200px;
-    width:200px;
-    margin:auto;
-    margin-top:-100px;
-}
-aside{
-    display:flex;
-    flex-direction: column;
-    position: fixed;
-    top:50%;
-    right:0;
-}
-.menu{
-    background-color:green;
-    height:40px;
-    width:40px;
-    margin-bottom: 8px;
-    margin-right: 35px;
-}
-footer{  
-    z-index: 4;
-    position: absolute;
-    bottom: 0;
-    left:0;
-    height: 90px;
-    width:100%;    
-    background-color:blue;
-    clip-path: polygon(0% 0%, 50% 0%, 100% 50%, 100% 100%, 0% 100%);
+.block{
+    background-color:white;
+    height: 630px;
+    border-color:	#F0F0F0;
+    border-width: 0.1px;
+    border-style:solid;
+    border-radius: 10px;
 }
