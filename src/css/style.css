@@ -10,7 +10,10 @@ header {
     width: 100%;
     text-align: center;
 }
-
+.bucket{
+    max-width: 273px;
+    width: 100%;
+}
 .tagline {
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
@@ -75,7 +78,7 @@ main {
     width: 100%;
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     grid-gap: 40px 28px;
     gap: 40px 28px;
     padding-bottom: 141px;
@@ -85,6 +88,8 @@ main {
     text-align: center;
     background-color: white;
     height: 630px;
+    max-width: 340px;
+    width:100%;
     border-color: #F0F0F0;
     border-width: 0.1px;
     border-style: solid;
@@ -120,4 +125,146 @@ main {
     font-family: 'Open Sans', sans-serif;
     padding-top: 23px;
     margin-top: 20px;
+}
+
+@media screen and (max-width:1440px){
+    .tagline {
+        font-size: 35px;
+    }    
+    .spec {
+        font-size: 13px;
+    }    
+    .name {
+        font-size: 18px;
+        max-width: 197px;
+    }    
+    .application {
+        font-size: 11px;
+        max-width: 230px;
+    }    
+    .wt {
+        font-size: 8px;
+    }    
+    .price {
+        font-size: 19px;
+    }
+    main{
+        max-width: 924px;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    .block {
+        max-width: 280px;
+    }
+    .bucket{
+        width:95%;
+    }
+    .icon{
+        width: 67%;
+    }
+    .button{
+        padding-top: 20px;
+        width: 210px;
+        height: 56px;
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width:960px){
+    header{
+        max-width: 700px;
+    }
+    .tagline {
+        font-size: 32px;
+    }    
+    .spec {
+        font-size: 11px;
+    }    
+
+
+    .name {
+        font-size: 18px;
+        max-width: 197px;
+    }    
+    .application {
+        font-size: 11px;
+        max-width: 230px;
+    }    
+    .wt {
+        font-size: 8px;
+    }    
+    .price {
+        font-size: 19px;
+    }
+    main{
+        max-width: 588px;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    .block {
+        max-width: 280px;
+    }
+    .bucket{
+        width:95%;
+    }
+    .icon{
+        width: 67%;
+    }
+    .button{
+        padding-top: 20px;
+        width: 210px;
+        height: 56px;
+        font-size: 15px;
+    }        
+}
+@media screen and (max-width:768px){
+    header{
+        max-width: 600px;
+    }
+    .tagline {
+        font-size: 26px;
+    }    
+    .spec {
+        font-size: 8px;
+    }   
+
+
+
+    .tagline {
+        font-size: 35px;
+    }    
+    .spec {
+        font-size: 13px;
+    }    
+    .name {
+        font-size: 18px;
+        max-width: 197px;
+    }    
+    .application {
+        font-size: 11px;
+        max-width: 230px;
+    }    
+    .wt {
+        font-size: 8px;
+    }    
+    .price {
+        font-size: 19px;
+    }
+    main{
+        max-width: 280px;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    .block {
+        max-width: 280px;
+    }
+    .bucket{
+        width:95%;
+    }
+    .icon{
+        width: 67%;
+    }
+    .button{
+        padding-top: 20px;
+        width: 210px;
+        height: 56px;
+        font-size: 15px;
+    }        
 }
